@@ -1,0 +1,31 @@
+/* Folha de estilo principal */
+
+
+/****************** IMPORTANDO FONTE *******************/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/***************** PRINCIPAL ******************/
+body{
+	font-family: 'Open Sans', sans-serif;
+	/*background-image: url("../imagens/papel.jpg");*/
+	/*background-attachment: fixed;  /* FIXA O BACKGROUND */*/
+	/*background-size: cover;		/* MANTER O TAMANHO DA IMAGEM DE FORMA RESPONSIVA */*/
+	/*background-color: #8e8e8e;*/
+	/*font-size: 1em; /* 1 em = 16px */
+}
+
+#main{
+	max-width: 1024px;
+	background-color: #ffffff;
+	margin: 0 auto; /* CENTRALIZAR A DIV */
+}
+
+
+
+
+/************* TRATAMENTO RESPONSIVO ****************/
+
+img {
+	max-width: 100%; /* TODAS AS IMAGENS DO SITE FICAM RESPONSIVAS */
+}
