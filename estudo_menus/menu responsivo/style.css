@@ -1,0 +1,62 @@
+/**
+* Estudo dos menus 
+* Menu drop responsivo
+* @author Richard Smarsi
+* Data 01/10/2018
+*/ 
+
+body{
+	font-family: sans-serif;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000610;
+	overflow: hidden; /* Completar a largura total com o back-ground (formar o menu) */
+}
+
+nav>ul>li{
+	float: left;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+}
+
+nav ul li a:hover {
+	background-color: #00bcff;
+	transition: all 0.5s; /* Efeito Transição 0 a 1 */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul {
+	display: block;
+	position: absolute;
+}
+
+/* Desenhando um triângulo no css */
+.Detalhes:after{  /* Atributo after (Após o conteúdo) */
+	content: ''; /* Insere um conteúdo no css */
+	color: #ff0000;
+	border: 5px solid transparent;
+	/*border-left-color: #ff0000;*/
+	/*border-right-color: #00ff00;*/
+	/*border-bottom-color: #0000ff;*/
+	border-top-color: #e8e8e8;
+	/* Alinhamento */
+	display: inline-block;
+	
+}
