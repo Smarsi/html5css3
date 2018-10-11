@@ -10,20 +10,20 @@
 	<!-- A linha abaixo garante o leyout responsivo nos diversos dispostivos mobile -->
 	<meta name="viewport" content="width=s, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css" class="css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-	<!-- Estrtura Principal -->
-	<div id="main">
 		<!-- Cabeçalho-->
 		<header>
-			<img src="imagens/abacaxixi.png" alt="html5 css3" title="html5 css3">
+			<img src="imagens/loucura.png" alt="html5 css3" title="html5 css3">
 		</header>
 		<!-- Menu -->
-		<nav>
+		<nav class="Menu">
+			<a href="#" class="Mobile">&#9776 Menu</a>
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Conteúdo</a>	
+				<li><a href="#" class="Detalhes">Conteúdo</a>	
                    	<ul>
                    	<li><a href="#">HTML</a></li>
                    	<li><a href="#">CSS3</a></li>
@@ -33,6 +33,8 @@
 				<li><a href="#">Contato</a></li>
 			</ul>										
 		</nav>
+		<!-- Estrtura Principal -->
+	<div id="main">
 		<!-- Conteúdo -->
 		<section id="banner">
 			<img src="imagens/lagubonito.jpg" alt="Curso html5 css3">
@@ -65,8 +67,10 @@
 		<footer>
 			<p> © Copyright - Richard Smarsi </p>
 		</footer>
-		
-
 	</div>
+
+	<script src="scripts/menuresponsivo.js"></script>
+	<script src="scripts/fixamenu.js"></script>
+	<script src="scripts/removeclick.js"></script>
 </body>
 </html>

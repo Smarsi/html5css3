@@ -58,5 +58,47 @@ nav li:hover ul {
 	border-top-color: #e8e8e8;
 	/* Alinhamento */
 	display: inline-block;
-	
+	vertical-align: middle;
+}
+
+.Mobile{
+	display: none;
+}
+
+/****** CLASSE USADA PELO JAVASCRIPT PARA FIXAR O MENU *******/
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+
+/************* Tratamento responsivo **************/
+@media screen and (max-width: 480px){
+	body{
+		margin: 0px;
+	}
+
+	.Mobile{
+	display: block;
+	background-color: #000616;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px;
+	}
+	nav>ul>li{
+		float: none;
+	}
+	nav ul{
+		width: 100%;
+		
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* Remover efeito de transição */
+	}
+
+	nav li ul li{
+		background-color: #044364;
+	}
 }

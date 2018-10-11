@@ -8,9 +8,9 @@
 /***************** PRINCIPAL ******************/
 body{
 	font-family: 'Open Sans', sans-serif;
-	/*background-image: url("../imagens/papel.jpg");*/
-	/*background-attachment: fixed;  /* FIXA O BACKGROUND */*/
-	/*background-size: cover;		/* MANTER O TAMANHO DA IMAGEM DE FORMA RESPONSIVA */*/
+	background-image: url("../imagens/counter.jpg");
+	background-attachment: fixed;  /* FIXA O BACKGROUND */
+	background-size: cover;		/* MANTER O TAMANHO DA IMAGEM DE FORMA RESPONSIVA */
 	/*background-color: #8e8e8e;*/
 	/*font-size: 1em; /* 1 em = 16px */
 }
@@ -28,4 +28,102 @@ body{
 
 img {
 	max-width: 100%; /* TODAS AS IMAGENS DO SITE FICAM RESPONSIVAS */
+}
+
+nav{
+	width: 100%;
+	background-color: rgba(0,0,0,.6);
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: rgba(0,0,0,.6);
+	overflow: hidden; /* Completar a largura total com o back-ground (formar o menu) */
+}
+
+nav>ul>li{
+	float: left;
+	width: 25%;
+
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+}
+
+nav ul li a:hover{
+	background-color: #f0f0f0;
+	transition: all 0.5s; /* Efeito Transição 0 a 1 */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul{
+	display: block;
+	position: absolute;
+}
+
+.Detalhes:after{
+	content: '';
+	color: #ff0000;
+	border: 5px solid transparent;
+	border-top-color: #e8e8e8;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.Mobile{
+	display: none;
+}
+
+/****** CLASSE USADA PELO JAVASCRIPT PARA FIXAR O MENU *******/
+.Fixar{
+	position: fixed;
+	top: 0;
+	z-index: 3;
+}
+
+
+/************* SmartPhone **************/
+@media screen and (max-width: 480px){
+	body{
+		margin: 0px;
+	}
+
+	/*********** MENU ***************/
+	.Mobile{
+	display: block;
+	background-color: rgba(0,0,0,.6);
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px;
+	}
+	nav>ul>li{
+		float: none;
+	}
+	nav ul{
+		width: 100%;
+		display: none;		
+	}
+
+	nav ul li a{
+		font-size: 0.875em;
+		padding: 12px;
+		text-align: left;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* Remover efeito de transição */
+	}
+
+	nav li ul li{
+		background-color: rgba(64,57,232,.6);
+	}
 }
