@@ -4,22 +4,76 @@
 /****************** IMPORTANDO FONTE *******************/
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
 /***************** PRINCIPAL ******************/
 body{
 	font-family: 'Open Sans', sans-serif;
 	background-image: url("../imagens/counter.jpg");
-	text-align: center;
+	
 	background-attachment: fixed;  /* FIXA O BACKGROUND */
 	background-size: cover;		/* MANTER O TAMANHO DA IMAGEM DE FORMA RESPONSIVA */
 	/*background-color: #8e8e8e;*/
 	/*font-size: 1em; /* 1 em = 16px */
 }
+/********* Código letras no banner ****************/
+#banner{
+	margin-top: 4px;
+	max-width: 1024px;
+	height: 563px;
+	/* Usado para flexibilizar o layout */
+	display: flex;
+	justify-content: center; /* Só funciona com display flex */
+	align-items: center; /* Só funciona com display flex */
+}
+
+#banner img{
+	filter: brightness(40%);
+}
+
+#banner h1{
+	position: absolute;
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.7em;
+} /******* FIM DO CÓDIGO LETRAS NO BANNER ************/
 
 #main{
 	max-width: 1024px;
 	background-color: #ffffff;
 	margin: 0 auto; /* CENTRALIZAR A DIV */
+}
+
+#contato{
+	padding-top: 100px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	border:3px solid #000000;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border:3px solid #000000;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #000000;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 10px 25px 10px 25px;
+	color: #ffff;
 }
 
 header{
@@ -29,6 +83,7 @@ header{
 	header img{
 		margin-top: 0px;
 		margin-left: 0px;
+		max-width: 15%
 	}
 
 	#banner img{
@@ -40,6 +95,7 @@ header{
 		color: #ffff;
 		padding: 5px;
 		margin-top: 100px;
+		text-align: center;
 	}
 
 
@@ -51,21 +107,28 @@ img {
 
 nav{
 	width: 100%;
-	background-color: rgba(0,0,0,.6);
+	max-width: 1024px;	
+	position: absolute;
+	z-index: 100;
 }
 
 nav ul{
 	list-style: none;
 	padding: 0px;
 	margin: 0px;
-	background-color: rgba(0,0,0,.6);
-	overflow: hidden; /* Completar a largura total com o back-ground (formar o menu) */
+	
+	
+
 }
 
-nav>ul>li{
+nav > ul > li{
 	float: left;
-	width: 25%;
+	width: 24.903%; /* 4 elementos do menu primário */
+	border-right: 1px solid ;
+}
 
+nav > ul > li > a{
+	font-size: 1.125em;
 }
 
 nav ul li a{
@@ -73,11 +136,13 @@ nav ul li a{
 	color: #ffffff;
 	padding: 15px;
 	display: block;
+	text-align: center; 
+	background-color: rgba(0,0,0,.8);
 }
 
 nav ul li a:hover{
-	background-color: #f0f0f0;
-	transition: all 0.5s; /* Efeito Transição 0 a 1 */
+	background-color: #d0dcef;
+	transition: all 0.27s; /* efeito transição (0 a 1) */
 }
 
 nav li ul{
@@ -86,7 +151,6 @@ nav li ul{
 
 nav li:hover ul{
 	display: block;
-	position: absolute;
 }
 
 .Detalhes:after{
@@ -106,7 +170,7 @@ nav li:hover ul{
 .Fixar{
 	position: fixed;
 	top: 0;
-	z-index: 3;
+	
 }
 
 
@@ -114,6 +178,17 @@ nav li:hover ul{
 @media screen and (max-width: 480px){
 	body{
 		margin: 0px;
+	}
+
+	#banner{ 
+		position: relative;
+		margin-top: -120px;
+		margin-bottom: -130px;
+	}
+
+	#banner h1{
+		text-align: center;
+		font-size: 1.0em;
 	}
 
 	/*********** MENU ***************/
@@ -143,6 +218,6 @@ nav li:hover ul{
 	}
 
 	nav li ul li{
-		background-color: rgba(64,57,232,.6);
+		background-color: rgba(64,57,232,.8);
 	}
 }
