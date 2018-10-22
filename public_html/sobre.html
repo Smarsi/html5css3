@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<!-- Favicon -->
+	<link rel="icon" href="imagens/abacaxi.png">
+	<title>Sobre - Counter Strike</title>
+	<!-- SEO Importante-->
+	<meta name = description content = "Aprenda html5 e css3 de forma simples e prática">
+	<!-- A linha abaixo garante o leyout responsivo nos diversos dispostivos mobile -->
+	<meta name="viewport" content="width=s, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css" class="css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!-- estrutura principal -->
+	<div id="main">
+
+		<!-- cabeçalho -->
+		<header>
+			<a href="index.html"><img src="imagens/loucura.png" title="HTML5 + CSS3" alt="Logotipo do site"></a>
+		</header>
+
+		<!-- menu -->
+		<nav class="Menu">
+			<!-- Classe usada para fixar menu no JS -->
+		<!-- &#9776 (desenho 3 linhas horizontais-->
+		<a href="#" class="Mobile">&#9776; Menu</a>
+			<!-- ul>li*4>a -->
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="#" class="Detalhes">Conteúdo </a>
+					<ul>
+						<li><a href="conteudo/html5.html">html5</a></li>
+						<li><a href="conteudo/css3.html">css3</a></li>
+						<li><a href="https://www.youtube.com/playlist?list=PLbEOwbQR9lqyuy7U1YjGgBv0x2Hzuw569" target="_blank">javascript</a></li>
+					</ul>
+				</li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+		
+		<section class="imgSobre">
+			<img src="imagens/sobre.jfif">
+		</section>
+
+		<div class="sobre">
+			<!-- Conteúdo principal -->
+			<h1>Sobre o Counter Strike Global Offensive</h1>
+			<p>Foi lançado no dia 21 de agosto de 2012 para as plataformas Windows e Mac OS X no Steam, Xbox 360 (por meio da Xbox Live Arcade), e uma versão exclusiva para os EUA para PlayStation 3 (por meio da PlayStation Network). A versão de Linux foi lançada em setembro de 2014 (com suporte para o sistema Ubuntu a partir da versão 12.04). O jogo conta com conteúdo clássico, como versões retrabalhadas de mapas clássicos, bem como novos mapas, personagens e modos de jogo. O sistema multiplayer multi-plataformas foi planejado entre jogadores de Windows, OS X, Linux e PSN, mas acabou excluindo o PSN por causa das diferenças na frequência de atualização dos sistemas. A versão da PSN oferece três formas de controles, que inclui DualShock 3, PlayStation Move e é fizero experimenta. </p>
+			<a href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/?l=portuguese">Veja na Steam</a>
+		</div>
+
+		<div id="Slide">
+			<h2>Slide abaixo mostra algumas imagens do jogo</h2>
+			<iframe src="//www.slideshare.net/slideshow/embed_code/key/In2MuBYoEb9dMP" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/T7K0pZ9tGi4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+		</div>
+
+		<div class="baixar">
+			<h3>clique na imagem para fazer o download de um documento</h3>
+			<a href="documentos/Pasta1.xlsx"><img src="imagens/cs.jfif"></a>
+		</div>
+	
+
+		
+
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Richard Smarsi</p>			
+		</footer>
+	</div>
+
+	<script src="scripts/menuresponsivo.js"></script>
+	<script src="scripts/fixamenu.js"></script>
+	<script src="scripts/removeclick.js"></script>
+</body>
+</html>
