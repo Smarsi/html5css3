@@ -29,6 +29,7 @@ body{
 
 #banner img{
 	filter: brightness(40%);
+	width: 100%;
 }
 
 #banner h1{
@@ -91,10 +92,6 @@ header img{
 margin-top: 0px;
 margin-left: 0px;
 max-width: 15%
-}
-
-#banner img{
-width: 100%;
 }
 
 footer{
@@ -228,33 +225,288 @@ nav li:hover ul{
 	text-align: center;
 }
 .sobre p{
-	padding: 0px 30px 0px 30px;
+	padding: 0px 30px 30px 30px;
 }
 .sobre a{
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	margin: 1px;
+	margin-left: 700px;
+	margin-top: 500px;
+
+}
+.sobre a:hover{
+	background-color: #d0dcef;
+	color: #000000;
+	transition: 1s;
+}
+
+.slide {
+	padding: 50px 0px 0px 0px;
+	text-align: center;
+}
+.slide h3{
+	margin-top: 100px;
+}
+
+#apresentacao{
+	border:1px solid #CCC;
+	 border-width:1px;
+	  margin-bottom:5px;
+	   max-width: 80%;" /* TORNANDO RESPONSIVO O SLIDE DE POWERPOINT */
+}
+
+#video{
+	max-width: 80%; /* TORNANDO RESPONSIVO VÍDEO DO YOUTUBE NA PÁGINA  */
+	margin-top: 20px;
+}
+
+.baixar{
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	color:red;
+}
+.baixar a img{
+	border-radius: 100px;
+}
+.baixar a img:hover{
+	border-radius: 0;
+	transition: 1s;
+}
+
+.diferenca{
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+}
+
+.diferenca img{
+	margin-top: 60px;
+}
+
+.novojogo{
+	margin-top: 4px;
+	max-width: 1024px;
+	height: 563px;
+	/* Usado para flexibilizar o layout */
+	display: flex;
+	justify-content: center; /* Só funciona com display flex */
+	align-items: center; /* Só funciona com display flex */
+}
+
+.novojogo img{
+	filter:brightness(40%);
+	max-width: 100%;
+}
+
+.novojogo h1{
+	position: absolute;
+	color: #ffffff;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	max-width: 1010px;
+	padding: 10px 0px 10px 0px;
+
+}
+
+.butao{
+	text-align: center;
+	margin-top: 50px;
+}
+
+.butao a{
+	background-color: #000000;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 10px 10px 10px;
+	border-radius: 5px;
+	margin: 1px;
+}
+
+.butao a:hover{
+	background-color: #d0dcef;
+	color: #000000;
+	transition: 1s;
+}
+
+.requisitos{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.requisitos p{
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+}
+.requisitos span{
+	font-weight: bold;
 }
 
 /***********Primeiro ponto de quebra *********/
+	
 @media screen and (max-width: 1058px){
 	body{
 		margin: 0px;
+		max-width: 100%;
 	}
 
 	#main{
 		margin: 0px;
 	}
+
+	.sobre a{
+		transition: 0s;
+		font-size: 0.758em;
+		border:0;
+		margin: 0;
+		position: relative;		
+	}
+	.baixar a img{
+		border-radius: 0;
+	}
+	.baixar a img:hover{
+	transition: none;
+	}
 }
 
-/********** Segundo ponto de quebra *********/
-@media screen and (max-width: )
+@media screen and (max-width: 990px){
+	#banner{
+		margin-top: -10px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	#banner{
+		margin-top: -32px;
+	}
+}
+
+/******** Segundo ponto de quebra ***********/
+@media screen and (max-width: 810px){
+	#banner{
+		margin-top: -60px;
+		margin-bottom: 0px;
+	}
+	#header{
+		margin-bottom: 0;
+	}
+	#heading h2{
+		margin-top: 0;
+		padding:0;
+	}
+	.blocos{
+		margin-bottom: 0px;
+	}
+	
+}
+
+/********* Terceiro ponto de quebra ************/
+
+@media screen and (max-width: 768px){
+	#banner{
+		margin-top: -70px;
+	}
+	#heading h2{
+		margin-top: -30px;
+	}
+	footer{
+		margin-top: 40px;
+	}
+}
+
+/********* Quarto ponto de quebra ***********/
+@media screen and (max-width: 700px){
+	#banner{
+		margin-top: -90px;
+	}
+	#heading h2{
+		margin-top: -40px;
+	}
+}
+
+/***********  Quinto ponto de quebra ************/
+@media screen and (max-width: 610px){
+	#banner h1{
+		font-size: 30px;
+	}
+	#banner{
+		margin-top: -115px;
+	}
+	#heading h2{
+		margin-top: -80px;
+	}
+	footer{
+		margin-top: 20px;
+	}
+}
+
+/************ Sexto ponto de quebra *****************/
+@media screen and (max-width: 660px){
+	#banner{
+		margin-top: -100px;
+	}
+	#banner h1{
+		font-size: 25px;
+	}
+	#heading h2{
+		margin-top: -85px;
+	}
+}
+@media screen and (max-width: 600px){
+	#banner{
+		margin-top: -120px;
+	}
+}
+@media screen and (max-width: 530px){
+	#banner{
+		margin-top: -140px;
+	}
+}
+
+@media screen and (max-width: 510px){
+	nav ul li{
+		font-size: 15px;
+	}
+	#heading h2{
+		margin-top: -120px;
+	}
+
+}
+@media screen and (max-width: 490px){
+	#banner{
+		margin-top: -150px;
+	}
+	nav ul li{
+		font-size: 10px;
+	}
+}
+
+
+
 
 
 /************* SmartPhone **************/
 @media screen and (max-width: 480px){
 
+	.novojogo h1{
+		font-size: 0.80rem;
+		padding: 0px;
+		margin: 0;
+	}
+
+	.butao a{
+		transition: none;
+		margin-top: 0;
+	}
+
 	#banner{ 
 		position: relative;
-		margin-top: -110px;
-		margin-bottom: -130px;
+		margin-top: -160px;
+	
 	}
 
 	#banner h1{
@@ -285,7 +537,7 @@ nav li:hover ul{
 	nav ul li a{
 		font-size: 0.875em;
 		padding: 12px;
-		text-align: left;
+		text-align: center;
 	}
 
 	nav ul li a:hover{
