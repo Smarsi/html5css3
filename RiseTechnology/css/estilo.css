@@ -1,0 +1,61 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("../imagens/fundo.png");
+	margin: 0;
+	color: #ffffff;
+	background-attachment: fixed;  /* FIXA O BACKGROUND */
+	background-size: cover;		/* MANTER O TAMANHO DA IMAGEM DE FORMA RESPONSIVA */
+	/*background-color: #8e8e8e;*/
+	/*font-size: 1em; /* 1 em = 16px */
+}
+
+img{
+	max-width: 100%;
+}
+
+.Mobile{
+	display: none;
+}
+
+#menu{
+	font-size: 20px;
+}
+
+nav {
+	width: 100%;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+	background-color: #000610;
+	overflow: hidden; /* Completar a largura total com o back-ground (formar o menu) */
+}
+
+nav>ul>li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #ffffff;
+	padding: 15px;
+	display: block;
+}
+
+nav ul li a:hover {
+	background-color: #00bcff;
+	transition: all 0.5s; /* Efeito Transição 0 a 1 */
+}
+
+nav li ul{
+	display: none;
+}
+
+nav li:hover ul {
+	display: block;
+	position: absolute;
+}

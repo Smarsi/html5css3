@@ -2,28 +2,33 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<title>RiseTechnology</title>
 </head>
 <body>
 	<section id="menu">
-		<nav>
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Serviços</a></li>
-					<ul>
-						<li><a href="#">Formatação</a></li>
-						<li><a href="#">Limpeza</a></li>
-						<li><a href="#">Solução de problemas</a></li>
-					</ul>
-				<li><a href="#">Contato</a></li>
-			</ul>
-		</nav>
+	<nav class="Menu"> <!-- Classe usada para fixar o menu -->
+		<!-- 8#9776 (Desenho de 3 linhas horizontais) -->
+		<a href="#" class="Mobile">&#9776 Menu</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Sobre</a></li>
+			<li><a href="#" class="Detalhes">Serviços</a>
+				<ul>
+					<li><a href="#">Formatação</a></li>
+					<li><a href="#">Limpeza</a></li>
+					<li><a href="#">Manutenção</a></li>
+				</ul>
+			</li>			
+			<li><a href="#">Contato</a></li>
+			<li><a href="#">Pesquisar</a></li>
+		</ul>
+	</nav>
 	</section>
 
 	<!-- Sessão onde está o banner e o Título h1 do site -->
 	<section id="bannerHome">
-		<img src="imagens/risetechnologyComFundo.png">
+		<!--<img src="imagens/fundo.png">-->
 		<h1>Rise Technology</h1>
 	</section>
 
