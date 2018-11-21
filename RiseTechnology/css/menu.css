@@ -140,7 +140,7 @@ footer span:hover{
 
 	footer{	
 	position: absolute;
-	margin-top: 1300px;
+	margin-top: 100%;
 
 	}
 }
@@ -194,7 +194,7 @@ footer span:hover{
 
 
 	footer{	
-	margin-top: 100%;
+	margin-top: 1500px%;
 	}
 
 }
