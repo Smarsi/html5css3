@@ -144,3 +144,57 @@ footer span:hover{
 
 	}
 }
+
+@media screen and (max-width: 1024px){
+	.Mobile{
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px;
+	}
+	nav{
+		color: #000;
+		height: 20px;
+	}
+	nav>ul>li{
+		float: none;
+	}
+	nav ul{
+		width: 100%;
+		display: none;
+		background-color: #fff;		
+	}
+
+	nav ul li a{
+		font-size: 0.875em;
+		padding: 12px;
+		text-align: center;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* Remover efeito de transição */
+	}
+
+	nav>ul>li>ul{
+		background-color: #fff;
+	}
+
+	#menu ul li a{
+	color: #000;
+	}
+
+	footer{	
+	position: absolute;
+	margin-top: 1300px;
+
+	}
+}
+
+@media screen and (max-width: 1050px){
+
+
+	footer{	
+	margin-top: 100%;
+	}
+
+}

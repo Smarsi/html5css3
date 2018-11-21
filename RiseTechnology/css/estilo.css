@@ -170,3 +170,62 @@ img{
 
 
 }
+
+@media screen and (max-width: 1024px){
+
+	#bannerHome h1{
+	position: absolute;
+	font-family: 'Pacifico', cursive;
+	font-size: 3em;
+	}
+
+	#heading h2{
+		font-size: 20px;
+	}
+
+	#conteudos{
+	float: none;
+	position: none;
+	text-align: center;
+	}
+
+	#conteudo1{
+	margin:0px;
+	}
+
+	#conteudo1 img{
+	position: relative;
+	margin:0px;
+	float: none;
+	border-radius: 10px;
+	}
+
+	#conteudo1 p{
+
+	float: none;
+	position: relative;
+	margin:0px;
+	font-size: 15px;
+	padding: 50px 20px 50px 20px;
+	}
+
+	#conteudo2{
+	margin:0px;
+	float: none;
+	margin:0 auto;
+	}
+
+	#conteudo2 img{
+	position: relative;
+	margin:0;
+	float: none;
+	border-radius: 10px;
+	}
+
+	#conteudo2 p{
+	margin:0;
+	font-size: 15px;
+	padding: 50px 20px 50px 20px;
+	} 
+
+}
