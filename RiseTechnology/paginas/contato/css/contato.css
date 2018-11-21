@@ -1,0 +1,30 @@
+#contato{
+	padding-top: 100px;
+	width: 70%;
+	margin: 0 auto;
+}
+
+#contato input[type=text]{
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	border:3px solid #000000;
+}
+
+#contato textarea{
+	width: 100%;
+	padding: 20px 10px 20px 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	border:3px solid #000000;
+	resize: none;
+}
+
+#contato input[type=submit]{
+	background-color: #000000;
+	border-radius: 5px;
+	border: 1px solid #fff;
+	padding: 10px 25px 10px 25px;
+	color: #ffff;
+}

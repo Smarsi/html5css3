@@ -1,0 +1,36 @@
+body{
+	text-align: center;
+	width: 100%;
+
+}
+#tituloPagina{
+	margin-top: 100px;
+	color:blue;
+	text-decoration: underline;
+}
+
+#imagens{
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 300px;
+	margin: 50px;
+	text-align: center;
+}
+
+#imagens img{
+	border-radius: 20px;
+}
+
+#texto{
+	text-align: center;
+	position: relative;
+	padding: 10px 50px 10px 50px;
+}
+#texto h2{
+	position: relative;
+	margin-top: 50px;
+}
+
+#texto2{
+	position: relative;
+}

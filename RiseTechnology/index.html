@@ -2,35 +2,40 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="icon" href="imagens/r.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>RiseTechnology</title>
+
 </head>
 <body>
-	<section id="menu">
-	<nav class="Menu"> <!-- Classe usada para fixar o menu -->
-		<!-- 8#9776 (Desenho de 3 linhas horizontais) -->
+<section>
+    	<nav id="menu" class="Menu"> <!-- Classe usada para fixar o menu -->
+		<!-- <8#9776 (Desenho de 3 linhas horizontais) -->
 		<a href="#" class="Mobile">&#9776 Menu</a>
 		<ul>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Sobre</a></li>
+			<li><a href="paginas/sobre/sobre.html">Sobre</a></li>
 			<li><a href="#" class="Detalhes">Serviços</a>
-				<ul>
-					<li><a href="#">Formatação</a></li>
-					<li><a href="#">Limpeza</a></li>
-					<li><a href="#">Manutenção</a></li>
+				<ul id="drop">
+					<li><a href="paginas/formatacao/formatacao.html">Formatação</a></li>
+					<li><a href="paginas/limpeza/limpeza.html">Limpeza</a></li>
+					<li><a href="paginas/manutencao/manutencao.html">Manutenção</a></li>
 				</ul>
 			</li>			
-			<li><a href="#">Contato</a></li>
-			<li><a href="#">Pesquisar</a></li>
+			<li><a href="paginas/contato/contato.html">Contato</a></li>
 		</ul>
 	</nav>
-	</section>
-
+</section>
 	<!-- Sessão onde está o banner e o Título h1 do site -->
 	<section id="bannerHome">
-		<!--<img src="imagens/fundo.png">-->
-		<h1>Rise Technology</h1>
+	<img class="banner" src="imagens/fundoSiteRise.png">
+	<h1 class="textoPrincipal"><span id="rise">Rise</span><span id="tech">Technology</span></h1>
 	</section>
+
 
 	<!-- Sessão onde está o título do conteúdo da Home -->
 	<section id="heading">
@@ -39,20 +44,28 @@
 
 	<!-- Sessão onde está todo o conteúdo da página-->
 	<section id="conteudos">
-		
-	</section>
+		<div id="conteudo1">
+			<img src="imagens/destaque1.png">
+			<p>A rise tem os melhores preços para o que você precisa, encontre
+			todos os tipos de serviços voltados para informática aqui conosco. Caso tenha problemas com seu computador ou notbook conte conosco para resolver.</p>
+		</div>
 
-	<!-- Sessão onde estão as duas imagens de destaque -->
-	<section id="destaquesHome">
+		<div id="conteudo2">
+		<img src="imagens/destaque2.png">
+			<p>Agora também criamos sites! Basta entrar em contato conosco pela página de <a href="paginas/contato/contato.html">contato</a>, e saiba mais. Nós ajudamos você a decidir qual o melhor layout e as melhores opções para o projeto dos seus sonhos. Rise Technology - Elevação em tecnologia que você merece.</p>
+		</div>
 		
 	</section>
 
 	<!-- Rodapé do Site -->
 	<footer>
-		<p>©Copyright - Richard Smarsi</p>
+		<p>© Copyright - <span>Richard Smarsi</span></p>
 	</footer>
 
-	
+	 <script type="text/javascript" src="js/efeito.js"></script> <script
+	 type="text/javascript" src="js/materialize.min.js"></script> <script
+	 type="text/javascript" src="js/menuresponsivo.js"></script> <script
+	 type="text/javascript" src="js/fixamenu.js"></script>
 	
 </body>
 </html>

@@ -1,61 +1,172 @@
 body{
-	font-family: 'Open Sans', sans-serif;
-	background-image: url("../imagens/fundo.png");
 	margin: 0;
-	color: #ffffff;
-	background-attachment: fixed;  /* FIXA O BACKGROUND */
-	background-size: cover;		/* MANTER O TAMANHO DA IMAGEM DE FORMA RESPONSIVA */
-	/*background-color: #8e8e8e;*/
-	/*font-size: 1em; /* 1 em = 16px */
+	font-family: sans-serif;	
+	text-align: center;
+	background-color: #fff;
 }
 
 img{
 	max-width: 100%;
 }
 
-.Mobile{
-	display: none;
-}
+/******* Início do código do Banner **********/
 
-#menu{
-	font-size: 20px;
-}
-
-nav {
-	width: 100%;
-}
-
-nav ul{
-	list-style: none;
-	padding: 0px;
-	margin: 0px;
-	background-color: #000610;
-	overflow: hidden; /* Completar a largura total com o back-ground (formar o menu) */
-}
-
-nav>ul>li{
-	float: left;
-	width: 20%;
-	text-align: center;
-}
-
-nav ul li a{
-	text-decoration: none;
-	color: #ffffff;
-	padding: 15px;
-	display: block;
-}
-
-nav ul li a:hover {
-	background-color: #00bcff;
-	transition: all 0.5s; /* Efeito Transição 0 a 1 */
-}
-
-nav li ul{
-	display: none;
-}
-
-nav li:hover ul {
+/* #icones{
 	display: block;
 	position: absolute;
+}
+
+#icones img{
+	margin-right: 1100px;
+	border-radius: 100px;
+	margin-left: -350px;
+}
+
+#icones a img:hover{
+	width: 60px;
+	transition: 5s;
+} */
+
+#bannerHome{
+	margin: 0;
+	max-width: 100%;
+	/* Usado para flexibilizar o layout */
+	display: flex;
+	justify-content: center; /* Só funciona com display flex */
+	align-items: center;/* Só funciona com display flex */
+}
+
+#bannerHome h1{
+	position: absolute;
+	color: #fff;
+	margin: 0;
+	font-family: 'Pacifico', cursive;
+	font-size: 7em;
+	
+} /******* FIM DO CÓDIGO LETRAS NO BANNER ************/
+
+/************** Fim Do Código de Banner **********************/
+
+/* Hading onde está o H2 */
+#heading{
+	margin-top: 100px;
+	font-size: 15px;
+}
+#heading h2{
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+/* Conteúdo do body */
+
+#conteudos{
+	float: left;
+	max-width: 100%;
+	position: absolute;
+}
+
+#conteudo1{
+	max-width: 100%;
+	margin-top: 20px;
+}
+#conteudo1 img{
+	position: relative;
+	margin-left: 20px;
+	float: left;
+	border-radius: 10px;
+}
+#conteudo1 p{
+
+	float: right;
+	position: absolute;
+	margin: 100px;
+	margin-left: 500px;
+	font-size: 20px	
+}
+
+#conteudo2{
+	max-width: 100%;
+	margin-top: 100px;
+	float: left;
+	margin-bottom: 200px;
+}
+#conteudo2 img{
+	position: relative;
+	margin-right: 20px;
+	float: right;
+	border-radius: 10px;
+}
+
+ #conteudo2 p{
+ 	
+	margin-right: 500px;
+	margin: 100px;
+	font-size: 20px;
+} 
+
+/* Destaques do fim da página home */
+.destaque{
+	margin-bottom: 100px;
+}
+
+
+
+@media screen and (max-width: 480px){
+
+	#bannerHome h1{
+	position: absolute;
+	font-family: 'Pacifico', cursive;
+	font-size: 3em;
+	}
+
+	#heading h2{
+		font-size: 20px;
+	}
+
+	#conteudos{
+	float: none;
+	position: none;
+	text-align: center;
+	}
+
+	#conteudo1{
+	margin:0px;
+	}
+
+	#conteudo1 img{
+	position: relative;
+	margin:0px;
+	float: none;
+	border-radius: 10px;
+	}
+
+	#conteudo1 p{
+
+	float: none;
+	position: relative;
+	margin:0px;
+	font-size: 15px;
+	padding: 50px 20px 50px 20px;
+	}
+
+	#conteudo2{
+	margin:0px;
+	float: none;
+	margin:0 auto;
+	}
+
+	#conteudo2 img{
+	position: relative;
+	margin:0;
+	float: none;
+	border-radius: 10px;
+	}
+
+	#conteudo2 p{
+	margin:0;
+	font-size: 15px;
+	padding: 50px 20px 50px 20px;
+	} 
+
+
 }

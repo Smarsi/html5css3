@@ -1,0 +1,124 @@
+.section{height:100vh;}
+
+/* Define o menu */
+#menu {
+    position: fixed;
+    border-bottom: 1px solid rgb(255,255,255);
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.Mobile{
+	display: none;
+}
+
+nav{
+	border: 10px;
+	font-size: 20px;
+}
+
+ ul{
+	margin-bottom: 10px;
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+	padding: 10px 10px 10px 10px;
+}
+
+nav a{
+	text-decoration: none;
+	color: #fff;
+	margin:15px;	
+}
+
+nav a:hover{
+	background-color: #dae3f2;
+	color: #fff;
+}
+
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 5px 5px 5px rgb(0,0,0);
+}
+nav ul li:hover ul{
+	display: block;
+}
+
+
+/* Nova classe a ser atribuída ao elemento com os estilos desejados */
+.mudaCor{
+    background-color:#F7F8FC;
+    box-shadow: 10px 0px 10px rgb(0,0,0);
+}
+.mudaCor a{
+	color: #000;
+}
+.mudaCor li:hover{
+	background-color: #dae3f2;
+}
+
+#menu ul li ul li a{
+	color: #000;
+	text-align: center;
+}
+
+
+/******* RODAPÉ **********/
+
+footer{
+	background-color: #fefe;
+	padding: 10px;
+	box-shadow: 10px 10px 10px rgb(0,0,0);
+	color: #000;
+	margin-top: 100px;
+}
+
+footer span{
+	color: #7384E7;
+}
+
+footer span:hover{
+	font-size: 10px;
+}
+
+/******* FIM DO RODAPÉ ***/
+
+
+
+
+@media screen and (max-width: 480px){
+	.Mobile{
+	display: block;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 15px;
+	}
+	nav>ul>li{
+		float: none;
+	}
+	nav ul{
+		width: 100%;
+		display: none;		
+	}
+
+	nav ul li a{
+		font-size: 0.875em;
+		padding: 12px;
+		text-align: center;
+	}
+
+	nav ul li a:hover{
+		transition: all 0s; /* Remover efeito de transição */
+	}
+
+	nav li ul li{
+	}
+}
