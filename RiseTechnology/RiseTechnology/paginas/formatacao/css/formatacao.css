@@ -1,0 +1,178 @@
+body{
+	text-align: center;
+	width: 100%;
+
+}
+#tituloPagina{
+	margin-top: 100px;
+	color:blue;
+}
+
+#imagens{
+	border-radius: 10px;
+	position: relative;
+	margin-bottom: 300px;
+	margin: 50px;
+	text-align: center;
+}
+
+#imagens img{
+	border-radius: 20px;
+}
+
+#texto{
+	text-align: center;
+	position: relative;
+	padding: 10px 50px 10px 50px;
+}
+#texto h2{
+	position: relative;
+	margin-top: 50px;
+}
+
+#texto2{
+	position: relative;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px){
+
+	#tituloPagina{
+	margin-top: 150px;
+}
+
+#imagens{
+	margin:0;
+	text-align: center;
+}
+
+#imagens img{
+	border-radius: 20px;
+}
+
+#texto{
+	text-align: center;
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+#texto h2{
+	position: relative;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#texto2{
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 550px){
+
+	#tituloPagina{
+	margin-top: 150px;
+}
+
+#imagens{
+	margin:0;
+	text-align: center;
+}
+
+#imagens img{
+	border-radius: 20px;
+}
+
+#texto{
+	text-align: center;
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+#texto h2{
+	position: relative;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#texto2{
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+
+}
+
+@media screen and (max-width: 768px){
+
+	#tituloPagina{
+	margin-top: 150px;
+}
+
+#imagens{
+	margin:0;
+	text-align: center;
+}
+
+#imagens img{
+	border-radius: 20px;
+}
+
+#texto{
+	text-align: center;
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+#texto h2{
+	position: relative;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#texto2{
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+
+}
+
+@media screen and (max-width: 1024px){
+
+	#tituloPagina{
+	margin-top: 150px;
+}
+
+#imagens{
+	margin:0;
+	text-align: center;
+}
+
+#imagens img{
+	border-radius: 20px;
+}
+
+#texto{
+	text-align: center;
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+#texto h2{
+	position: relative;
+	margin-top: 50px;
+	font-size: 20px;
+}
+
+#texto2{
+	position: relative;
+	padding: 50px 50px 50px 50px;
+}
+
+}

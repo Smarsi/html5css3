@@ -1,0 +1,92 @@
+body{
+	margin: 0;
+	font-family: sans-serif;	
+	text-align: center;
+	background-color: #fff;
+}
+
+.Mobile{
+	display: none;
+}
+
+.section{height:100vh;}
+
+/* Define o menu */
+#menu {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 10px 0px 10px rgb(0,0,0);
+}
+
+nav{
+	border: 10px;
+	font-size: 20px;
+	background-color: #fff;
+}
+
+nav ul li:hover{
+	background-color: #dae3f2;
+}
+
+nav ul li{
+	list-style: none;
+	padding: 5px 5px 5px 5px;
+}
+
+nav>ul>li{
+		float: left;
+}
+
+nav a{
+	text-decoration: none;
+	color: #000;
+	margin:15px;
+
+}
+
+nav a:hover{
+	background-color: #dae3f2;
+	color: #fff;
+}
+
+
+
+nav ul li ul{
+	display: none;
+	position: absolute;
+	background-color: white;
+	box-shadow: 5px 5px 5px rgb(0,0,0);
+}
+
+
+nav ul li:hover ul{
+	display: block;
+}
+
+
+/******* RODAPÉ **********/
+
+footer{
+	background-color: #fefe;
+	padding: 10px;
+	box-shadow: 10px 10px 10px 10px rgb(0,0,0);
+	color: #000;
+	position: absolute;
+	width: 100%;
+	margin-top: 100px;
+}
+
+footer span{
+	color: #7384E7;
+}
+
+footer span:hover{
+	cursor: pointer;
+}
+
+/******* FIM DO RODAPÉ ***/

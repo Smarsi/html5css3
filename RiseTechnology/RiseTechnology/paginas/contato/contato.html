@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/contato.css">
+	<link rel="stylesheet" href="css/menuPaginas.css">
+	<!-- favicon -->
+	<link rel="icon" href="imagens/r.png"> 
+	<title>RiseTechnology - Contato</title>
+	<!-- SEO Importante -->
+	<meta name = "description" content = "Página de contato">
+	<!-- A linha abaixo "garante" o layout responsivo nos diversos dispositivos mobile -->
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0">
+	<!-- Link com a folha de estilo -->
+	<!-- CDN Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+<body>
+	<!-- estrutura principal -->
+
+	<!-- Código do menu -->
+	<section>
+    	<nav id="menu" class="Menu"> <!-- Classe usada para fixar o menu -->
+		<!-- <8#9776 (Desenho de 3 linhas horizontais) -->
+		<a href="#" class="Mobile">&#9776 Menu</a>
+		<ul>
+			<li><a href="../../index.html">Home</a></li>
+			<li><a href="../sobre/sobre.html">Sobre</a></li>
+			<li><a href="#" class="Detalhes">Serviços</a>
+				<ul id="drop">
+					<li><a href="../formatacao/formatacao.html">Formatação</a></li>
+					<li><a href="../limpeza/limpeza.html">Limpeza</a></li>
+					<li><a href="../manutencao/manutencao.html">Manutenção</a></li>
+				</ul>
+			</li>			
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+</section> <!-- Fim do código do menu -->
+
+		<!-- Formulário de Contato -->
+		<div id="contato">
+			<h1>Formulário Contato</h1>
+
+			<form action="php/formulario.php" method="POST">
+				<input type="text" name="nome" placeholder="nome">
+				<input type="text" name="email" placeholder="email">
+				<textarea name="mensagem" placeholder="mensagem"></textarea>
+				<input type="submit" value="Enviar">
+			</form>
+		</div>
+		
+		<!-- Rodapé -->
+
+<footer>
+		<p>© Copyright - <span>Richard Smarsi</span></p>
+</footer>
+
+<!-- Fim do Rodapé -->
+<script src="javascript/menuresponsivo.js"></script>
+<script src="javascript/fixamenu.js"></script>
+
+</body>
+</html>
